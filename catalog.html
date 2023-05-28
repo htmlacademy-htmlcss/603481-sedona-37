@@ -19,7 +19,7 @@
             <a href="index.html" class="navigation-item-link">Главная</a>
           </li>
           <li class="navigation-list-item">
-            <a href="about.html" class="navigation-item-link">О седоне</a>
+            <a href="about.html" class="navigation-item-link">О Седоне</a>
           </li>
           <li class="navigation-list-item">
             <a href="catalog.html" class="navigation-item-link  navigation-item-active">Гостиницы</a>
@@ -41,7 +41,7 @@
         </ul>
       </nav>
 
-      <button class="button button-brown">Хочу сюда!</button>
+      <a class="button button-brown">Хочу сюда!</a>
 
     </header>
 
@@ -53,9 +53,7 @@
 
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
-              <img class="breadcrumbs-ico" src="#!" alt="на главную">
-            </a>
+            <a class="breadcrumbs-link" href="index.html"></a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
@@ -65,9 +63,9 @@
       </header>
 
       <section class="section-form-filter-housing" data-test=" filter">
-        <h2 class="visually-hidden">Поиск жилья по фильтру</h2>
+        <h2 class="visually-hidden">Форма поиска отелей по фильтру</h2>
 
-        <form class="form-filter-housing" action="#!" method="post">
+        <form class="form-filter-housing" action="!#" method="post">
 
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
@@ -114,25 +112,15 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Стоимость, &#8381;:</legend>
+            <legend class="catalog-filter-title">Стоимость, <b>&#8381;</b>:</legend>
 
-            <ul class="catalog-filter-list">
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="number" name="catalog-group" value="0" checked>от
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="number" name="catalog-group" value="900">до
-                </label>
-              </li>
-              <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="range" min="0" max="900">
-                </label>
-              </li>
-            </ul>
+            <label class="control">
+              От<input class="control-input" type="text" name="catalog-group" value="0" checked>
+              До<input class="control-input" type="text" name="catalog-group" value="9000">
+              <button></button>
+              <button></button>
+            </label>
+
           </fieldset>
 
           <button class="button button-blue" type="submit">Применить</button>
@@ -166,7 +154,7 @@
           <li class="product-card-item">
             <a class="product-card-link" href="#!">
               <img class="product-card-img" src="#!" alt="Amara Resort &amp; Spa">
-              <h2 class="product-card-title">Amara Resort &amp; Spa</h2>
+              <h3 class="product-card-title">Amara Resort &amp; Spa</h3>
             </a>
             <b class="product-card-name">Гостиница</b>
             <b class="product-card-price">От 4000 &#8381;</b>
@@ -182,7 +170,7 @@
           <li class="product-card-item">
             <a class="product-card-link" href="#!">
               <img class="product-card-img" src="#!" alt="Villas at Poco Diablo">
-              <h2 class="product-card-title">Villas at Poco Diablo</h2>
+              <h3 class="product-card-title">Villas at Poco Diablo</h3>
             </a>
             <b class="product-card-name">Гостиница</b>
             <b class="product-card-price">От 5000 &#8381;</b>
@@ -198,7 +186,7 @@
           <li class="product-card-item">
             <a class="product-card-link" href="#!">
               <img class="product-card-img" src="#!" alt="Desert Quail Inn">
-              <h2 class="product-card-title">Desert Quail Inn</h2>
+              <h3 class="product-card-title">Desert Quail Inn</h3>
             </a>
             <b class="product-card-name">Гостиница</b>
             <b class="product-card-price">От 2500 &#8381;</b>
@@ -214,7 +202,7 @@
           <li class="product-card-item">
             <a class="product-card-link" href="#!">
               <img class="product-card-img" src="#!" alt="GreenTree Inn">
-              <h2 class="product-card-title">GreenTree Inn</h2>
+              <h3 class="product-card-title">GreenTree Inn</h3>
             </a>
             <b class="product-card-name">Гостиница</b>
             <b class="product-card-price">От 1500 &#8381;</b>
@@ -256,8 +244,7 @@
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
 
         <form class="mailing-form" action="#!" method="post">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Ваш e-mail" required>
+          <input type="email" name="email" placeholder="Ваш e-mail" required>
           <button class="button button-blue" type="submit">Подписаться</button>
         </form>
       </section>
@@ -290,7 +277,9 @@
       </section>
 
       <section class="section-htmlacademy">
-        <img class="htmlacademy-logo" src="#!" alt="htmlacademy">
+        <a class="htmlacademy-link" src="https://htmlacademy.ru/">
+          <img class="htmlacademy-logo" src="!#" alt="htmlacademy">
+        </a>
       </section>
     </footer>
   </body>
