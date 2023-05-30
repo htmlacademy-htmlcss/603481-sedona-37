@@ -6,34 +6,34 @@
   </head>
   <body>
 
-    <header class="header">
+    <header class="page-header" data-test="header">
 
-      <a class="logo-link" href="https://htmlacademy.ru/">
-        <img class="logo-image" src="#!" alt="Лгоготип Седона">
+      <a class="header-logo-link" href="https://htmlacademy.ru/">
+        <img class="header-logo-image" src="#!" alt="Лгоготип Седона">
       </a>
 
-      <nav class="nav">
+      <nav class="navigation">
 
-        <ul class="nav-list">
-          <li class="nav-list-item">
-            <a href="index.html" class="nav-item-link nav-item-active">Главная</a>
+        <ul class="navigation-list">
+          <li class="navigation-list-item">
+            <a href="index.html" class="navigation-item-link navigation-item-active">Главная</a>
           </li>
-          <li class="nav-list-item">
-            <a href="about.html" class="nav-item-link">О седоне</a>
+          <li class="navigation-list-item">
+            <a href="about.html" class="navigation-item-link">О седоне</a>
           </li>
-          <li class="nav-list-item">
-            <a href="catalog.html" class="nav-item-link">Гостиницы</a>
+          <li class="navigation-list-item">
+            <a href="catalog.html" class="navigation-item-link">Гостиницы</a>
           </li>
         </ul>
 
-        <ul class="nav-list nav-user">
-          <li class="nav-list-item">
-            <a href="#!" class="nav-item-link nav-item-link-icon">
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-list-item">
+            <a href="#!" class="navigation-item-link navigation-item-link-icon">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="nav-list-item">
-            <a href="#!" class="nav-item-link nav-item-link-icon">
+          <li class="navigation-list-item">
+            <a href="#!" class="navigation-item-link navigation-item-link-icon">
               <span class="visually-hidden">Избранное</span>
               <span class="user-favorites">12</span>
             </a>
@@ -41,20 +41,22 @@
         </ul>
       </nav>
 
-      <a class="button button-primary" href="#!">Хочу сюда!</a>
+      <button class="button button-brown">Хочу сюда!</button>
 
     </header>
 
     <main class="main-index" data-test="main">
 
-      <section class="section-hero">
-        <h1 class="visually-hidden">Седона &mdash; небольшой городок в Аризоне</h1>
+      <h1 class="visually-hidden">Седона</h1>
+
+      <section class="section-hero" data-test="hero">
         <img class="hero-logo-text" src="#!" alt="Добро пожаловать в Седону">
+        <h2 class="hero-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p class="hero-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
 
       <section class="section-advantages">
-        <h2 class="advantages-title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <span class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</span>
+        <h2 class="visually-hidden">Преимущества</h2>
 
         <ul class="advantages-list advantages-first-line">
           <li class="advantages-item">
@@ -80,9 +82,13 @@
         </ul>
       </section>
 
-      <section class="section-recommendations">
+      <section class="section-come">
         <h2 class="come-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p>Опытный персонал и качественное обслуживание!</p>
+      </section>
+
+      <section class="section-recommendations">
+        <h2 class="visually-hidden">Рекомендации</h2>
 
         <ul class="recommendations-list">
           <li class="recommendations-item recommendations-item-active">
@@ -101,27 +107,28 @@
         </ul>
       </section>
 
-      <section class="section-hotel-search">
-        <h2 class="hotel-search-title">Заинтересовались?</h2>
+      <section class="section-hotel-search" data-test="search">
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+        <h3 class="hotel-search-title">Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 
-        <button class="button button-search">поиск гостиницы в Седоне</button>
+        <button class="button button-brown">поиск гостиницы в Седоне</button>
       </section>
 
-      <section class="section-subscribe" >
+      <section class="section-mailing" data-test="subscribe">
 
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <h2 class="mailing-title">Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
 
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="mailing-form" action="#!" method="post">
+          <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="Ваш e-mail" required>
-          <button class="button button-subscribe" type="submit">Подписаться</button>
+          <button class="button button-blue" type="submit">Подписаться</button>
         </form>
-
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
 
       <section class="section-social">
         <ul class="social-list">
