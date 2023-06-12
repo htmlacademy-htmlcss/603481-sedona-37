@@ -64,11 +64,13 @@ body {
 .navigation-list {
   width: 440px;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
 .navigation-user {
+  display: flex;
   justify-content: flex-end; 
   margin-left: auto;
 }
@@ -181,8 +183,6 @@ body {
 .advantages-text {
   text-align: center;
   margin: 0;
-  font-size: 22px;
-  line-height: 26px;
 }
 
 .advantages-list {
@@ -204,7 +204,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 102px 64px;
+  padding: 102px 82px;
 }
 
 .advantages-wrap-bright {
@@ -290,12 +290,13 @@ body {
 }
 
 .recommend-item {
+  padding: 82px 85px;
   list-style-type: none;
   background: #ffffff;
 }
 
-.recommend-item-wrap {
-  padding: 80px 34px;
+.recommend-wrap {
+  
   text-align: center;
 }
 
@@ -436,21 +437,6 @@ body {
   background-color: #83B3D3;
   padding: 14px 12px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Inner page */
 /* Filter */
@@ -640,10 +626,6 @@ body {
 .pagination-link-more {
   color: #000000;
 }
-
-
-
-
 
 /* Button */
 .button {
