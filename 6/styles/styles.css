@@ -43,10 +43,6 @@ body {
   background-color: #ffffff;
 }
 
-/* flex 
-.header-flex {
-  display: flex;
-}*/
 
 .logo-link {
   width: 140px;
@@ -73,7 +69,6 @@ body {
 }
 
 .navigation-user {
-  /* width: 170px;*/
   justify-content: flex-end; 
   margin-left: auto;
 }
