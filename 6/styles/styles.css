@@ -41,12 +41,14 @@ body {
 /* Header */
 .header-page {
   background-color: #ffffff;
+  padding: 0 70px;
 }
 
 .page-container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  
 }
 
 .logo-link {
@@ -90,6 +92,7 @@ body {
 
 .navigation-list-item:last-child {
   margin-right: 0;
+  padding-right: 0;
   
 }
 
@@ -133,10 +136,6 @@ body {
 /* Main */
 .main-container {
   flex-grow: 1; /* sticks footer */
-}
-
-.main-shadow {
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Intro */
@@ -564,6 +563,7 @@ font-size: 18px;
 /* Footer */
 .footer-page  {
   background-color: #ffffff;
+  padding: 0 70px;
 }
 
 .footer-wrap {
@@ -594,6 +594,7 @@ font-size: 18px;
 
 .social-list-item {
   list-style-type: none;
+  padding: 14px 12px;
 }
 
 .social-list-vk {
@@ -603,7 +604,6 @@ font-size: 18px;
   mask: url("../images/svg/social/vk.svg") no-repeat center;
   -webkit-mask: url("../images/svg/social/vk.svg") no-repeat center;
   background-color: #83B3D3;
-  padding: 14px 12px;
 }
 
 .social-list-telegram {
@@ -613,7 +613,6 @@ font-size: 18px;
   mask: url("../images/svg/social/telegram.svg") no-repeat center;
   -webkit-mask: url("../images/svg/social/telegram.svg") no-repeat center;
   background-color: #83B3D3;
-  padding: 14px 12px;
 }
 
 .social-list-youtube {
@@ -623,7 +622,6 @@ font-size: 18px;
   mask: url("../images/svg/social/youtube.svg") no-repeat center;
   -webkit-mask: url("../images/svg/social/youtube.svg") no-repeat center;
   background-color: #83B3D3;
-  padding: 14px 12px;
 }
 
 /* Button */
