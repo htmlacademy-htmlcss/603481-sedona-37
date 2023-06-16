@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /* Fonts */
 @font-face {
   font-family: "PT Sans";
@@ -127,6 +133,10 @@ body {
 /* Main */
 .main-container {
   flex-grow: 1; /* sticks footer */
+}
+
+.main-shadow {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Intro */
@@ -553,7 +563,6 @@ font-size: 18px;
 
 /* Footer */
 .footer-page  {
-  padding: 45px 0;
   background-color: #ffffff;
 }
 
@@ -561,6 +570,7 @@ font-size: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 45px 0;
 }
 
 .contacts-phone-link {
