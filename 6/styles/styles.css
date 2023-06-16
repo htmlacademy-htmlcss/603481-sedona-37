@@ -22,13 +22,14 @@
 }
 
 html {
-  height: 100%; /* sticks footer */
+  height: 100%; /* sticky footer */
 }
 
 body {
-  display: flex;  /* sticks footer */
-  flex-direction: column;  /* sticks footer */
-  min-height: 100%; /* sticks footer */
+  display: flex;  /* sticky footer */
+  flex-direction: column;  /* sticky footer */
+  min-height: 100%; /* sticky footer */
+
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -47,8 +48,12 @@ body {
 .page-container {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+
+  display: flex; /* sticky footer */
+  flex-direction: column; /* sticky footer */
+  min-height: 100%; /* sticky footer */
+  flex-grow: 1; /* sticky footer */
 }
 
 .logo-link {
