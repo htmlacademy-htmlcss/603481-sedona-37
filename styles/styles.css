@@ -54,7 +54,7 @@ body {
 .header-page {
   background-color: #ffffff;
   padding-left: 70px;
-  padding-right: 70px; 
+  padding-right: 70px;
   display: flex;
   align-items: center;
 }
@@ -84,7 +84,7 @@ body {
   flex-grow: 1;
   margin: 0 20px 0 0;
   padding: 0;
-  
+
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -276,7 +276,7 @@ body {
   grid-column-end: -1;
   text-align: center;
 
-    
+
 }
 
 .advantages-item-bright .advantages-subtitle {
@@ -360,7 +360,7 @@ body {
 }
 
 .recommend-wrap {
-  
+
   text-align: center;
 }
 
@@ -758,15 +758,14 @@ font-size: 18px;
 
 /* Footer */
 .footer-page  {
-  background-color: #ffffff;
-  padding: 0 70px;
-}
-
-.footer-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 45px 0;
+  background-color: #ffffff;
+  padding-top: 40px;
+  padding-right: 70px;
+  padding-bottom: 30px;
+  padding-left: 70px;
 }
 
 .contacts-phone-link {
@@ -849,7 +848,7 @@ social-list-youtube:active {
 .social-list-vk:hover,
 .social-list-telegram:hover,
 .social-list-youtube:hover {
-  background-color: #68A2CA; 
+  background-color: #68A2CA;
 }
 
 .company-link {
@@ -984,7 +983,7 @@ social-list-youtube:active {
   top: -50%;
   transform: translate(-50%, -50%); */
 }
- 
+
 .control-label {
   padding-left: 36px;
 }
@@ -1004,7 +1003,7 @@ social-list-youtube:active {
   left: 5px;
   background-color: #3F5E72;
   border-radius: 50%;
- 
+
 }
 
 /* input */
