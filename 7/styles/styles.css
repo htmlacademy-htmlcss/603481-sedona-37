@@ -707,6 +707,14 @@ body {
   margin-right: 6px;
 }
 
+.catalog-price {
+  text-align: right;
+}
+
+.catalog-rating {
+  text-align: center;
+}
+
 .catalog-name,
 .catalog-subtitle,
 .catalog-price,
