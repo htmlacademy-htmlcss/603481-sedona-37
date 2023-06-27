@@ -932,8 +932,9 @@ social-list-youtube:active {
 /* form */
 .hotel-filter {
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 150px 150px 288px 190px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   gap: 70px;
 }
 
@@ -941,6 +942,10 @@ social-list-youtube:active {
   margin: 0;
   padding: 0;
   border: none;
+}
+
+.filter-column-housing {
+  margin-right: auto;
 }
 
 .filter-column-name {
