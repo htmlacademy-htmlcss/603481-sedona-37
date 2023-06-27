@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="page-container">
-    <header class="header-page">
+    <header class="header-page" data-test="header">
 
       <a class="logo-link" href="index.html">
         <img class="logo-image" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
@@ -46,14 +46,14 @@
       <a class="button button-primary" href="#">Хочу сюда!</a>
     </header>
 
-    <main class="main-page main-container">
+    <main class="main-page main-container" data-test="main">
 
-      <section class="section-intro">
+      <section class="section-intro" data-test="hero">
         <h1 class="visually-hidden">Седона &mdash; небольшой городок в Аризоне</h1>
         <img class="intro-images" src="images/svg/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону потому, что она лучше, чем Гранд-Каньон">
       </section>
 
-      <section class="section-advantages">
+      <section class="section-advantages" data-test="advantages">
         <div class="section-container">
           <h2 class="advantages-title">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
           <p class="advantages-desc">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -128,7 +128,7 @@
         </ul>
       </section>
 
-      <section class="section-hotel-search">
+      <section class="section-hotel-search" data-test="search">
         <div class="section-container">
           <h2 class="hotel-search-title">Заинтересовались?</h2>
           <p class="hotel-search-desc">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
@@ -137,7 +137,7 @@
 
       </section>
 
-      <section class="section-subscribe section-subscribe-images ">
+      <section class="section-subscribe section-subscribe-images" data-test="subscribe">
         <div class="subscribe-container">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -145,12 +145,12 @@
 
         <form class="subscribe-form" action="#" method="post">
           <input class="control-email" type="email" name="email" placeholder="Ваш e-mail" required>
-          <button class="button button-send button-padding" type="submit">Подписаться</button>
+          <button class="button button-send" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
 
-    <footer class="footer-page">
+    <footer class="footer-page" data-test="footer">
       <ul class="social-list">
         <li class="social-list-item">
           <a class="social-list-link social-list-vk" href="https://vk.com/htmlacademy" target="_blank">

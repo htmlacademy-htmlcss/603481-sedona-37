@@ -9,7 +9,7 @@
 <body>
   
   <div class="page-container">
-    <header class="header-page">
+    <header class="header-page" data-test="header">
 
       <a class="logo-link" href="index.html">
         <img class="logo-image" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
@@ -46,8 +46,8 @@
       <a class="button button-primary" href="#">Хочу сюда!</a>
     </header>
 
-    <main class="main-inner main-container">
-      <div class="filter-container">
+    <main class="main-inner main-container" data-test="main">
+      <div class="filter-container" data-test="filter">
         <h1 class="filter-title">Гостиницы Седоны</h1>
 
         <ul class="breadcrumbs-list">
@@ -147,7 +147,7 @@
             </div>
           </fieldset>
 
-          <div class="button-wrap">
+          <div class="form-button">
             <button class="button button-submit" type="submit">Применить</button>
             <button class="button button-transparent" type="reset">Сбросить</button>
           </div>
@@ -155,7 +155,7 @@
         </form>
       </div>
 
-      <section class="section-catalog">
+      <section class="section-catalog" data-test="catalog">
         
         <div class="catalog-container">
 
@@ -184,8 +184,7 @@
           </div>
 
           <ul class="catalog-list catalog-card">
-            <!-- catalog-list-card -->
-            <li class="catalog-item ">
+            <li class="catalog-item">
               <a class="catalog-link-image" href="#" tabindex="-1">
                 <img class="catalog-img" src="images/photo-hotels/photo-1.jpg" width="300" height="212" alt="Гостиница: Amara Resort &amp; Spa">
               </a>
@@ -337,7 +336,7 @@
         </div>
       </section>
         
-      <section class="section-subscribe">
+      <section class="section-subscribe" data-test="subscribe">
         <div class="subscribe-container">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -345,13 +344,13 @@
 
         <form class="subscribe-form" action="#" method="post">
           <input class="control-email" type="email" name="email" placeholder="Ваш e-mail" required>
-          <button class="button button-send button-padding" type="submit">Подписаться</button>
+          <button class="button button-send" type="submit">Подписаться</button>
         </form>
       </section>
 
     </main>
 
-    <footer class="footer-page">
+    <footer class="footer-page" data-test="footer">
       <ul class="social-list">
         <li class="social-list-item">
           <a class="social-list-link social-list-vk" href="https://vk.com/htmlacademy" target="_blank">
