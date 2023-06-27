@@ -1101,11 +1101,12 @@ social-list-youtube:active {
 }
 
 /* Buttons Form */
-.button-wrap {
+.form-button {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   gap: 32px;
+  margin-top: 56px;
 }
 
 /* Button */
