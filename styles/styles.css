@@ -444,7 +444,8 @@ html {
 
 /* Subscribe */
 .section-subscribe  {
-  padding: 96px 0;
+  padding-top: 98px;
+  padding-bottom: 100px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -509,7 +510,7 @@ html {
   border-radius: 4px;
   outline: none;
   flex-grow: 1;
-
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -1235,6 +1236,8 @@ social-list-youtube:active {
   border-radius: 0 4px 4px 0;
   background-color: #82B3D3;
   padding: 8px 50px;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .button-in-favorites {
