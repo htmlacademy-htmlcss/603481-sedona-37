@@ -780,31 +780,30 @@ html {
   display: block;
   width: 20px;
   height: 20px;
-  -webkit-mask: 0 50% repeat-x url("../images/svg/icons/star.svg");
-  mask: 0 50% repeat-x url("../images/svg/icons/star.svg");
-  -webkit-mask-size: 50% calc(1px + 18px) 100%;
-  mask-size: 50% calc(1px + 18px) 100%;
+  gap: 6px;
+  -webkit-mask: url("../images/svg/icons/star.svg") repeat-x left center / calc( 20px + 6px) 20px;
+  mask: url("../images/svg/icons/star.svg") repeat-x left center / calc( 20px + 6px) 20px;
   background-color: #83B3D3;
 }
 
 .stars-1 {
-  width: calc(1px + 18px);
+  width: 20px;
 }
 
 .stars-2 {
-  width: calc((1px + 18px) * 2);
+  width: calc((20px + 6px) * 2);
 }
 
 .stars-3 {
-  width: calc((1px + 18px) * 3);
+  width: calc((20px + 6px) * 3);
 }
 
 .stars-4 {
-  width: calc((1px + 18px) * 4);
+  width: calc((20px + 6px) * 4);
 }
 
 .stars-5 {
-  width: calc((1px + 18px) * 5);
+  width: calc((20px + 6px) * 5);
 }
 
 .catalog-name,
