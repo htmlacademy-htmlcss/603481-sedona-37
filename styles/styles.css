@@ -315,7 +315,7 @@ html {
 
 /* Recommend */
 .section-recommend {
-  padding-top: 64px;
+  padding-top:38px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -325,7 +325,7 @@ html {
 }
 
 .recommend-title {
-  margin: 0 0 20px 0;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -421,11 +421,12 @@ html {
 
 .section-hotel-search .section-container {
   padding-top: 90px;
-  padding-bottom: 90px;
+  padding-bottom: 96px;
 }
 
 .hotel-search-title {
   margin-top: 0;
+  margin-top: 6px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
@@ -1218,6 +1219,8 @@ social-list-youtube:active {
 
 .button-primary-wide {
   padding: 8px 50px;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .button-favorites {
