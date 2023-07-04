@@ -445,7 +445,7 @@ html {
 /* Subscribe */
 .section-subscribe  {
   padding-top: 98px;
-  padding-bottom: 100px;
+  padding-bottom: 102px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -468,8 +468,8 @@ html {
 }
 
 .subscribe-title {
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin-top: -4px;
+  margin-bottom: 22px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
