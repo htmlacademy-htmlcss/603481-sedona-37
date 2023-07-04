@@ -334,10 +334,6 @@ html {
   color: #000000;
 }
 
-.img-icon {
-  margin-bottom: 30px;
-}
-
 .recommend-subtitle {
   margin-top: 0;
   margin-bottom: 30px;
@@ -351,7 +347,8 @@ html {
 .recommend-desc {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 22px;
+  line-height: 26px;
   text-align: center;
 }
 
@@ -382,8 +379,38 @@ html {
   text-align: center;
 }
 
-.recommend-item-bright {
+.recommend-item:nth-child(odd) {
   background: rgba(131, 179, 211, 0.12);
+}
+
+.recommend-item::before {
+  content: "";
+  align-self: center;
+  width: 84px;
+  height: 84px;
+  margin-bottom: 20px;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  background-color: #83b3d3;
+}
+
+.recommend-item-housing::before {
+  -webkit-mask-image: url("../images/svg/recommend/housing.svg");
+  mask-image: url("../images/svg/recommend/housing.svg");
+}
+
+.recommend-item-eating::before {
+  -webkit-mask-image: url("../images/svg/recommend/eating.svg");
+  mask-image: url("../images/svg/recommend/eating.svg");
+}
+
+.recommend-item-souvenir::before {
+  -webkit-mask-image: url("../images/svg/recommend/souvenir.svg");
+  mask-image: url("../images/svg/recommend/souvenir.svg");
 }
 
 /* Hotel search */
