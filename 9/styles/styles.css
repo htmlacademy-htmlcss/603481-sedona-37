@@ -235,11 +235,33 @@ html {
 .advantages-subtitle {
   text-align: center;
   margin-top: 3px;
-  margin-bottom: 62px;
+  margin-bottom: 30px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
   text-transform: uppercase;
+}
+
+.advantages-wrap-bright .advantages-subtitle::after {
+    display: block;
+    content: "";
+    align-self: center;
+    width: 60px;
+    height: 2px;
+    margin: 30px auto 0;
+    background: rgba(255, 255, 255, 0.30);
+
+}
+
+.advantages-subtitle::after {
+  display: block;
+  content: "";
+  align-self: center;
+  width: 60px;
+  height: 2px;
+  margin: 30px auto 0;
+  background: rgba(0, 0, 0, 0.30);
+
 }
 
 .advantages-desc {
@@ -517,7 +539,6 @@ html {
 }
 
 /* Inner page */
-
 /* Filter Form */
 .filter-container {
   background-color: #82B3D3;
@@ -626,7 +647,6 @@ html {
 .filter-form-label {
   /* width: max-content; */
   /* line-height: 23px; */
-
   position: relative;
   display: block;
   padding-left: 38px;
@@ -975,9 +995,7 @@ html {
 .catalog-card .catalog-link-subtitle {
   grid-column: 1 / span 2;
 }
-
 /* // для кнопки button-card */
-
 
 .catalog-item {
   border-radius: 4px;
