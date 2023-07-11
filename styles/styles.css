@@ -775,20 +775,11 @@ html {
 }
 
 /* // Input */
-.range-input:focus-visible,
-.range-input:hover {
-  outline: none;
-  border: none;
+.filter-form-range:not(:disabled):hover,
+.filter-form-range:not(:disabled):focus-visible {
   background: #E6E6E6;
   
 }
-
-.range-input:focus-visible {
-  border: 3px solid #83B3D3;
-  background: #E6E6E6;
-}
-
-
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
@@ -1002,6 +993,10 @@ html {
   border: 1px solid #E6E6E6;
   padding: 20px;
   list-style-type: none;
+}
+
+.catalog-item:hover {
+  border: 1px solid #82B3D3;
 }
 
 .catalog-link-image {
@@ -1318,7 +1313,8 @@ social-list-youtube:active {
 }
 
 /* Состояния кнопок */
-.button-primary:hover {
+.button-primary:hover,
+.button-primary-wide:hover {
   background-color: #615048;
 }
 
@@ -1336,7 +1332,8 @@ social-list-youtube:active {
   color: rgba(250, 250, 250, 0.6);
 }
 
-.button-primary:focus-visible {
+.button-primary:focus-visible,
+.button-primary-wide:focus-visible {
   background-color: #615048;
 }
 
@@ -1353,7 +1350,8 @@ button-send:focus-visible,
   border: 3px solid #83B3D3;
 }
 
-.button-primary:active {
+.button-primary:active,
+.button-primary-wide:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
 }
