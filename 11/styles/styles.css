@@ -1143,16 +1143,16 @@ body {
 }
 
 .pagination-list-item {
-  width: 60px;
-  height: 60px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  
   background: #82B3D3;
   border-radius: 4px;
+  
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  justify-content: center;
-  align-items: center;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -1161,6 +1161,7 @@ body {
   display: block;
   text-decoration: none;
   color: #ffffff;
+  padding: 12px 22px;
 }
 
 .pagination-list-link:active {
