@@ -148,6 +148,7 @@ body {
 }
 
 .user-link-search {
+  display: block;
   width: 20px;
   height: 20px;
   background: url("../images/svg/icons/search.svg") no-repeat center;
@@ -1208,7 +1209,7 @@ body {
 
 .social-list-item {
   list-style-type: none;
-  /* padding: 14px 12px; */
+  
 }
 
 .social-list-link {
@@ -1325,8 +1326,6 @@ body {
 
 /* Button */
 .button {
-  appearance: none;
-  outline: none;
   border: 1px solid transparent;
   padding: 8px 18px;
   border-radius: 4px;
