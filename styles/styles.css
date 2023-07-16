@@ -1207,6 +1207,11 @@ body {
 
 .social-list-item {
   list-style-type: none;
+  /* padding: 14px 12px; */
+}
+
+.social-list-link {
+  display: block;
   padding: 14px 12px;
 }
 
@@ -1215,7 +1220,7 @@ body {
   display: block;
   width: 24px;
   height: 14px;
-  
+
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -1277,6 +1282,12 @@ body {
 }
 
 /* Company Link */
+
+.company-link {
+  display: block;
+  padding: 8px 0;
+
+}
 .company-link::after {
   content: "";
   display: block;
