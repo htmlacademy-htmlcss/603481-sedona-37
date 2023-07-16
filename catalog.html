@@ -69,19 +69,19 @@
 
             <ul class="filter-list">
               <li class="filter-item">
-                <label class="filter-form-label">
+                <label class="filter-form-label filter-form-label-checkbox">
                   <input class="filter-checkbox" type="checkbox" name="pool" checked>
                   <span class="filter-label-name">Бассейн</span>
                 </label>
               </li>
               <li class="filter-item">
-                <label class="filter-form-label">
+                <label class="filter-form-label filter-form-label-checkbox">
                   <input class="filter-checkbox" type="checkbox" name="parking" checked>
                   <span class="filter-label-name">Парковка</span>
                 </label>
               </li>
               <li class="filter-item">
-                <label class="filter-form-label">
+                <label class="filter-form-label filter-form-label-checkbox" x>
                   <input class="filter-checkbox" type="checkbox" name="Wi-Fi">
                   <span class="filter-label-name">Wi-Fi</span>
                 </label>
@@ -94,19 +94,19 @@
 
             <ul class="filter-list">
               <li class="filter-item">
-                <label class="filter-form-label">
+                <label class="filter-form-label filter-form-label-radio">
                   <input class="filter-radio" type="radio" name="catalog-group" checked>
                   <span class="filter-label-name">Гостиница</span>
                 </label>
               </li>
               <li class="filter-item">
-                <label class="filter-form-label">
+                <label class="filter-form-label filter-form-label-radio">
                   <input class="filter-radio" type="radio" name="catalog-group">
                   <span class="filter-label-name">Мотель</span>
                 </label>
               </li>
               <li class="filter-item">
-                <label class="filter-form-label">
+                <label class="filter-form-label filter-form-label-radio">
                   <input class="filter-radio" type="radio" name="catalog-group">
                   <span class="filter-label-name">Апартаменты</span>
                 </label>
@@ -118,14 +118,15 @@
             <legend class="filter-form-legend">Стоимость,&nbsp;₽:</legend>
 
             <div class="filter-price-controls">
-              <label class="filter-form-label-price min-price">
+              <label class="filter-form-label-price ">
+                <span class="filter-form-text filter-form-range-min-price">от</span>
                 <input class="filter-form-range" type="number" name="min-price" value="0">
-                <span class="filter-form-text">от</span>
               </label>
 
-              <label class="filter-form-label-price max-price">
+              <label class="filter-form-label-price ">
+                <span class="filter-form-text filter-form-range-max-price">до</span>
                 <input class="filter-form-range" type="number" name="max-price" value="9000">
-                <span class="filter-form-text">до</span>
+                
               </label>
             </div>
 
@@ -191,9 +192,9 @@
               </a>
               
               <p class="catalog-name">Гостиница</p>
-              <p class="catalog-price">От&nbsp4000&nbsp₽</p>
+              <p class="catalog-price">От&nbsp;4000&nbsp;₽</p>
 
-              <a class="button button-primary" href="#">подробнее</a>
+              <a class="button button-info" href="#">подробнее</a>
               <button class="button button-favorites">в избранное</button>
 
               <p class="stars stars-4">
@@ -213,9 +214,9 @@
               </a>
               
               <p class="catalog-name">Гостиница</p>
-              <p class="catalog-price">От&nbsp5000&nbsp₽</p>
+              <p class="catalog-price">От&nbsp;5000&nbsp;₽</p>
 
-              <a class="button button-primary" href="#">подробнее</a>
+              <a class="button button-info" href="#">подробнее</a>
               <button class="button button-in-favorites">в избранном</button>
 
               <p class="stars stars-4">
@@ -235,9 +236,9 @@
               </a>
 
               <p class="catalog-name">Гостиница</p>
-              <p class="catalog-price">От&nbsp2500&nbsp₽</p>
+              <p class="catalog-price">От&nbsp;2500&nbsp;₽</p>
 
-              <a class="button button-primary" href="#">подробнее</a>
+              <a class="button button-info" href="#">подробнее</a>
               <button class="button button-favorites">в избранное</button>
 
               <p class="stars stars-3">
@@ -257,9 +258,9 @@
               </a>
 
               <p class="catalog-name">Гостиница</p>
-              <p class="catalog-price">От&nbsp1500&nbsp₽</p>
+              <p class="catalog-price">От&nbsp;1500&nbsp;₽</p>
 
-              <a class="button button-primary" href="#">подробнее</a>
+              <a class="button button-info" href="#">подробнее</a>
               <button class="button button-favorites">в избранное</button>
 
               <p class="stars stars-2">
@@ -301,7 +302,12 @@
         </div>
 
         <form class="subscribe-form" action="#" method="post">
-          <input class="control-email" type="email" name="email" placeholder="Ваш e-mail" required>
+          
+          <label class="subscribe-form-label">
+            <input class="control-email" type="email" name="email" placeholder="Ваш e-mail" required>
+            <span class="visually-hidden">Укажите ваш e-mail</span>
+          </label>
+
           <button class="button button-send" type="submit">Подписаться</button>
         </form>
       </section>
