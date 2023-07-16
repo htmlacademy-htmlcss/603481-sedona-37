@@ -143,21 +143,18 @@ body {
 }
 
 .navigation-user-link {
-  position: relative;
+  width: 20px;
+  height: 20px;
   display: block;
+  text-decoration: none;
 }
 
 .user-link-search {
-  display: block;
-  width: 20px;
-  height: 20px;
   background: url("../images/svg/icons/search.svg") no-repeat center;
 }
 
 .user-link-favorites {
   position: relative;
-  width: 20px;
-  height: 20px;
  background: url("../images/svg/icons/heart.svg") no-repeat center;
 }
 
@@ -1326,6 +1323,7 @@ body {
 
 /* Button */
 .button {
+
   border: 1px solid transparent;
   padding: 8px 18px;
   border-radius: 4px;
@@ -1650,6 +1648,15 @@ background-color: #e6e6e6;
   display: flex;
   overflow: hidden;
   border-radius: 4px;
+  outline: none;
+}
+.modal-search-input-with-buttons .text-input:focus-visible {
+  outline: none;
+  border: none;
+}
+
+.modal-search-input-with-buttons:focus-within {
+  outline: 1px solid #000000;
 }
 
 .modal-search-wrapper .modal-search-field {
@@ -1673,6 +1680,7 @@ background-color: #e6e6e6;
   padding: 0;
   background-color: #f2f2f2;
   border: none;
+  appearance: none;
   cursor: pointer;
 }
 
