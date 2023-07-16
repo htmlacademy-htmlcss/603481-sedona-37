@@ -412,12 +412,14 @@ body {
   height: 84px;
   margin-top: -6px;
   margin-bottom: 28px;
+
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
   mask-position: center;
   -webkit-mask-size: contain;
   mask-size: contain;
+
   background-color: #83b3d3;
 }
 
@@ -448,7 +450,6 @@ body {
 }
 
 .hotel-search-title {
-  margin-top: 0;
   margin-top: 6px;
   margin-bottom: 20px;
   font-weight: 700;
@@ -572,10 +573,9 @@ body {
   flex-wrap: wrap;
   align-items: center;
   row-gap: 8px;
-  margin: 0 0 8px -5px;
+  margin: 0 0 16px -5px;
   padding: 0;
-  list-style-type: none;
-  margin-bottom: 16px; 
+  list-style-type: none; 
 }
 
 .breadcrumbs-item {
@@ -799,10 +799,10 @@ body {
 }
 
 .filter-form-range-min-price {
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
 }
 .filter-form-range-max-price {
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
 }
 
 .filter-form-text {
@@ -1057,7 +1057,6 @@ body {
 
 .catalog-subtitle {
   font-size: 24px;
-  font-family: PT Sans;
   font-weight: 700;
   line-height: 28px;
   color: #000;
@@ -1211,49 +1210,47 @@ body {
   padding: 14px 12px;
 }
 
-.social-list-vk {
+.social-list-link::after {
+  content: "";
+  display: block;
   width: 24px;
   height: 14px;
-  display: block;
-  -webkit-mask: url("../images/svg/social/vk.svg") no-repeat center;
-  mask: url("../images/svg/social/vk.svg") no-repeat center;
+  
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+
   background-color: #83B3D3;
   transition: background-color 0.3s ease-in;
 }
 
-.social-list-telegram {
-  width: 24px;
-  height: 14px;
-  display: block;
-  -webkit-mask: url("../images/svg/social/telegram.svg") no-repeat center;
-  mask: url("../images/svg/social/telegram.svg") no-repeat center;
-  background-color: #83B3D3;
+.social-icon-vk::after {
+  -webkit-mask-image: url("../images/svg/social/vk.svg");
+  mask-image: url("../images/svg/social/vk.svg");
 }
 
-.social-list-youtube {
-  width: 24px;
-  height: 14px;
-  display: block;
-  -webkit-mask: url("../images/svg/social/youtube.svg") no-repeat center;
-  mask: url("../images/svg/social/youtube.svg") no-repeat center;
-  background-color: #83B3D3;
+.social-icon-telegram::after {
+  -webkit-mask-image: url("../images/svg/social/telegram.svg");
+  mask-image: url("../images/svg/social/telegram.svg");
 }
 
-.social-list-vk:active,
-social-list-telegram:active,
-social-list-youtube:active {
-  background-color: rgba(104, 162, 202, 0.3);
+.social-icon-youtube::after {
+  -webkit-mask-image: url("../images/svg/social/youtube.svg");
+  mask-image: url("../images/svg/social/youtube.svg");
 }
 
-.social-list-vk:focus-visible,
-.social-list-telegram:focus-visible,
-.social-list-youtube:focus-visible {
+.social-list-link:hover::after {
   background-color: #68A2CA;
 }
 
-.social-list-vk:hover,
-.social-list-telegram:hover,
-.social-list-youtube:hover {
+.social-list-link:active::after {
+  background-color: rgba(104, 162, 202, 0.3);
+}
+
+.social-list-link:focus-visible::after {
   background-color: #68A2CA;
 }
 
@@ -1280,25 +1277,37 @@ social-list-youtube:active {
 }
 
 /* Company Link */
-.company-link {
+.company-link::after {
+  content: "";
+  display: block;
   width: 116px;
   height: 34px;
-  display: block;
-  -webkit-mask: url("../images/svg/logo-company.svg") no-repeat center;
-  mask: url("../images/svg/logo-company.svg") no-repeat center;
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  
   background-color: #000000;
   transition: background-color 0.3s ease-in;
 }
 
-.company-link:hover {
+.company-link::after {
+  -webkit-mask: url("../images/svg/logo-company.svg");
+  mask: url("../images/svg/logo-company.svg");
+}
+
+.company-link:hover:after {
   background-color: #756157;
 }
 
-.company-link:focus-visible {
+.company-link:focus-visible::after {
   background-color: #756157;
 }
 
-.company-link:active {
+.company-link:active::after {
   background-color: rgba(117, 97, 87, 0.3);;
 }
 
@@ -1674,7 +1683,7 @@ background-color: #e6e6e6;
   mask: url("../images/svg/icons/plus.svg") center / contain no-repeat;
 }
 
-modal-search-wrapper .modal-search-field:focus,
+.modal-search-wrapper .modal-search-field:focus,
 .modal-search-button-edit:focus {
 outline-offset: -2px;
 }
