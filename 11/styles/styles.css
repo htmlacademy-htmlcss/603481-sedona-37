@@ -103,12 +103,12 @@ body {
 
 .navigation-list-item {
   list-style-type: none;
-  padding: 6px 10px;
+  padding: 0 10px;
 }
 
 .navigation-link {
   display: block;
-  padding: 10px 6px;
+  padding: 16px 6px;
   text-decoration: none;
   color: #000000;
   border-bottom: 2px solid transparent;
