@@ -455,8 +455,8 @@ body {
 .section-subscribe  {
   text-align: center;
   background-color: #ffffff;
-  padding-top: 98px;
-  padding-bottom: 102px;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .section-subscribe-images {
@@ -482,8 +482,8 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
-  margin-top: -4px;
-  margin-bottom: 22px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .subscribe-desc {
@@ -525,7 +525,7 @@ body {
   background: #F2F2F2;
   border: none;
   border-radius: 4px;
-  padding: 14px 20px;
+  padding: 16px 20px;
 }
 
 /* Inner page */
@@ -556,7 +556,8 @@ body {
   flex-wrap: wrap;
   align-items: center;
   row-gap: 8px;
-  list-style-type: none; 
+  list-style-type: none;
+  margin-top: 0;
   margin-bottom: 16px;
   margin-left: -5px;
   padding: 0;
@@ -674,6 +675,10 @@ body {
   padding: 4px;
 }
 
+.filter-form-label-radio {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
 
 .filter-form-label {
   line-height: 23px;
@@ -816,7 +821,7 @@ input[type="radio"]:active {
   font-weight: 700;
   line-height: 24px;
   appearance: textfield;
-  border: none;
+  border: 2px solid transparent;
   background: #F2F2F2;
 }
 
@@ -1151,9 +1156,10 @@ input[type="radio"]:active {
   align-items: center;
   list-style-type: none;
   box-shadow: inset 0 1px #e6e6e6;
+  padding: 0;
   padding-top: 40px;
   margin: 0;
-  padding: 0;
+  
 }
 
 .pagination-list-item:not(:last-child) {
@@ -1174,10 +1180,13 @@ input[type="radio"]:active {
 }
 
 .pagination-list-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
   text-decoration: none;
   color: #ffffff;
-  padding: 12px 22px;
+  padding: 12px;
 }
 
 .pagination-list-link:active {
@@ -1186,6 +1195,10 @@ input[type="radio"]:active {
 
 .pagination-list-active {
   background-color: #F2F2F2;
+}
+
+.pagination-list-link:not(.pagination-link-active):hover {
+  background-color: #82b3d3;
 }
 
 .pagination-link-active {
@@ -1206,7 +1219,7 @@ input[type="radio"]:active {
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  padding-top: 40px;
+  padding-top: 38px;
   padding-right: 70px;
   padding-bottom: 30px;
   padding-left: 70px;
