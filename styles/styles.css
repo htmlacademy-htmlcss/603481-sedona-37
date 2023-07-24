@@ -48,6 +48,10 @@ body {
   margin: 0 auto;
 }
 
+.none {
+  display: none;
+}
+
 /* Header */
 .header-page {
   display: flex;
