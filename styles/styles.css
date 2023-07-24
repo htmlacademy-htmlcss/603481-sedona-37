@@ -48,10 +48,6 @@ body {
   margin: 0 auto;
 }
 
-.none {
-  display: none;
-}
-
 /* Header */
 .header-page {
   display: flex;
@@ -1194,10 +1190,6 @@ input[type="radio"]:active {
 
 .pagination-list-active {
   background-color: #F2F2F2;
-}
-
-.pagination-list-link:not(.pagination-link-active):hover {
-  background-color: #82b3d3;
 }
 
 .pagination-link-active {
