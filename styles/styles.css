@@ -938,6 +938,11 @@ input[type="radio"]:active {
   padding: 14px 20px;
   margin-left: 70px;
   margin-right: 70px;
+
+  background-image: url("../images/svg/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 21px 20px;
+  background-position: right center;
 }
 
 .select-control:hover {
