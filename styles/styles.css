@@ -48,10 +48,6 @@ body {
   margin: 0 auto;
 }
 
-.none {
-  display: none;
-}
-
 /* Header */
 .header-page {
   display: flex;
@@ -942,6 +938,11 @@ input[type="radio"]:active {
   padding: 14px 20px;
   margin-left: 70px;
   margin-right: 70px;
+
+  background-image: url("../images/svg/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 21px 20px;
+  background-position: right center;
 }
 
 .select-control:hover {
@@ -1194,10 +1195,6 @@ input[type="radio"]:active {
 
 .pagination-list-active {
   background-color: #F2F2F2;
-}
-
-.pagination-list-link:not(.pagination-link-active):hover {
-  background-color: #82b3d3;
 }
 
 .pagination-link-active {
