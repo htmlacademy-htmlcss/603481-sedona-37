@@ -9,7 +9,7 @@
     <title>Седона</title>
 </head>
 <body>
-    
+
   <div class="page-container">
     <header class="header-page" data-test="header">
       <nav class="navigation">
@@ -177,80 +177,80 @@
       </a>
     </footer>
 
-    <div class="modal-window" data-test="modal">
+    <dialog class="modal-window" data-test="modal">
       <button class="modal-button-close" type="button">
         <span class="visually-hidden">Закрыть модальное окно</span>
       </button>
-  
+
       <div class="modal-container">
         <h2 class="modal-title title">Поиск гостиницы в Седоне</h2>
-  
+
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-  
+
           <fieldset class="modal-fieldset-group modal-group-fieldset-date">
             <label class="modal-form-label modal-form-label-data" for="arrival-date">
               <span class="modal-form-label">Дата&nbsp;Заезда:</span>
               <input class="modal-form-input-date  form-input" type="text" name="arrival-date" id="arrival-date" placeholder="Укажите дату" value="27 апреля 2020" required autofocus>
               <span class="modal-form-message form-message-error">Мы не можем отправить вас в прошлое.</span>
             </label>
-            
+
           </fieldset>
-  
+
           <fieldset class="modal-fieldset-group modal-group-fieldset-date">
             <label class="modal-form-label modal-form-label-data" for="departure-date">
               <span class="modal-form-label">Дата&nbsp;Выезда:</span>
               <input class="modal-form-input-date form-input" type="text" name="departure-date" id="departure-date" placeholder="Укажите дату" value="1 сентября 2023" required>
               <span class="modal-form-message">На эти даты есть свободные номера. Пока есть.</span>
             </label>
-            
+
           </fieldset>
-  
+
           <fieldset class="modal-fieldset-group modal-group-adults">
             <label class="modal-form-label modal-form-label-adults" for="adults">Взрослые:</label>
-            
+
             <div class="modal-form-container">
               <button class="modal-form-button modal-form-button-decrease" type="button">
                 <span class="visually-hidden">Уменьшить количество человек</span>
               </button>
-  
+
               <input class="modal-form-input modal-input-adults form-input" id="adults" name="adults" type="number" value="2" min="1" max="10" required>
-              
+
               <button class="modal-form-button modal-form-button-increase" type="button">
                 <span class="visually-hidden">Увеличить количество человек</span>
               </button>
             </div>
           </fieldset>
-  
+
           <fieldset class="modal-fieldset-group modal-group-children">
             <div class="modal-with-tooltip">
               <label class="modal-form-label modal-form-label-adults" for="children">Дети:</label>
-              
+
               <div class="modal-tooltip">
                 <button class="modal-tooltip-toggle" type="button" aria-labelledby="info-label-children">
                   <span class="visually-hidden">Дополнительная информация.</span>
                 </button>
-                
+
                 <p class="modal-tooltip-text" id="info-label-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
-              </div> 
+              </div>
             </div>
-            
+
             <div class="modal-form-container modal-tooltip-container">
               <button class="modal-form-button modal-form-button-decrease" type="button">
                 <span class="visually-hidden">Уменьшить количество человек</span>
               </button>
-              
+
               <input class="modal-form-input modal-input-children form-input" id="children" name="children" type="number" value="2" min="1" max="10" required>
-              
+
               <button class="modal-form-button modal-form-button-increase" type="button">
                 <span class="visually-hidden">Увеличить количество человек</span>
               </button>
             </div>
           </fieldset>
-  
+
           <button class="modal-search-button button button-light" type="submit">Найти</button>
         </form>
       </div>
-    </div>
+    </dialog>
   </div>
 
   <script src="js/modal.js"></script>
